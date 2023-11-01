@@ -250,6 +250,16 @@ section {
 	.v-store-name {
 		color: var(--green-clr-dark);
 		font-weight: 550;
+		text-decoration: 2px solid underline;
+		text-decoration-color: transparent;
+		text-underline-offset: 4px;
+		transition: 300ms ease-in-out;
+		transition-property: text-underline-offset, text-decoration-color;
+
+		&:hover {
+			text-underline-offset: 2px;
+			text-decoration-color: var(--green-clr-dark);
+		}
 	}
 	.v-about-us,
 	.v-product-images {

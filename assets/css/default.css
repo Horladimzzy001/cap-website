@@ -10,8 +10,13 @@
 	--green-clr: #5acf5f;
 	--green-clr-dark: #49bd4e;
 	--white: #fff;
+	--green-opacity: rgba(90, 207, 95, 0.05);
 	--dark-variant: 0, 0, 0;
 	--dark: rgba(var(--dark-variant), 1);
+}
+::selection {
+	background-color: var(--green-opacity);
+	color: var(--green-clr-dark);
 }
 *,
 *::before,
