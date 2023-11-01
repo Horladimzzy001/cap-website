@@ -14,6 +14,19 @@
 }
 #v-header {
 	padding-block: 1rem 0;
+	.v-logo {
+		max-width: 3rem;
+		max-height: 6rem;
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+	.v-logo-name {
+		color: var(--green-clr);
+		&:last-child {
+			margin-left: -2px;
+		}
+	}
 	.v-cat {
 		display: flex;
 		align-items: center;
@@ -105,10 +118,22 @@ section {
 			bottom: 0;
 		}
 		.v-clr {
-			width: 220px;
 			display: inline-block;
-			min-height: 3.3rem;
+			min-height: 3rem;
+			margin-bottom: -12px;
 			position: relative;
+			text-align: center;
+			width: 150px;
+			@media all and (min-width: 320px) {
+				& {
+					text-align: start;
+				}
+			}
+			@media all and (min-width: 991px) {
+				& {
+					width: 220px;
+				}
+			}
 		}
 		.v-text {
 			position: absolute;
@@ -222,6 +247,10 @@ section {
 
 .v-content-section {
 	padding-inline: 1rem;
+	.v-store-name {
+		color: var(--green-clr-dark);
+		font-weight: 550;
+	}
 	.v-about-us,
 	.v-product-images {
 		row-gap: 1.5rem;
@@ -240,10 +269,20 @@ section {
 #v-footer {
 	.v-footer-inner {
 		padding-inline: 1rem;
-		padding-block: 1.5rem;
+		padding-block: 1rem;
 		border-top: 1px solid #e1e0e0;
 	}
 	.v-aside {
-		font-weight: 440;
+		font-weight: 490;
+		.text-name {
+			color: var(--dark);
+		}
+		.v-logo-name {
+			color: var(--green-clr-dark);
+		}
+	}
+	#footer-logo {
+		max-width: 3rem;
+		height: auto;
 	}
 }
