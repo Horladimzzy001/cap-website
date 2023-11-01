@@ -1,5 +1,3 @@
-const observer = new ResizeObserver(() => {});
-
 const words = ["Quality", "Class", "caliber", "Style", "value"];
 
 const textContainer = document.querySelector(".v-main-title .v-clr");
