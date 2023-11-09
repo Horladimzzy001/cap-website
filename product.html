@@ -41,18 +41,24 @@
 				<!-- header @::end -->
 				<main id="v-product-main">
 					<div class="container-lg p-0">
-						<div class="row col-12 m-0 align-items-stretch">
-							<div class="col-12 my-5">
-								<h2 class="v-title">Product 1</h2>
-							</div>
+						<button class="d-flex align-items-center go-back">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+								<path
+									fill="currentColor"
+									d="M14.71 6.71a.996.996 0 0 0-1.41 0L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
+							</svg>
+							<span>Back</span>
+						</button>
+						<div class="row col-12 m-0 mt-5 align-items-stretch">
 							<div class="col-md-6">
 								<div class="v-product-image">
-									<img src="./assets/images/products/product-1.jpg" alt="" class="img-fluid" id="v-specific-image-product" />
+									<img src="" alt="" class="img-fluid" id="v-specific-image-product" />
 								</div>
 							</div>
 							<div class="col-md-5 mx-auto mt-4 mt-md-0">
 								<div class="v-product-content">
 									<div class="d-flex flex-column gap-4">
+										<h2 class="v-title text-capitalize"></h2>
 										<h2 class="v-price-container">
 											<span class="v-price-tag">Price: </span> &nbsp;
 											<span class="v-price"> &#8358; 35, 000 </span>
@@ -66,7 +72,7 @@
 												distinction without compromise.
 											</span>
 										</div>
-										<div class="d-flex mt-4">
+										<div class="d-flex mt-2">
 											<a href="https://wa.me/+447438746530" class="v-order" target="_blank">
 												<span>Place an order</span>
 												<div class="v-icon">
@@ -111,6 +117,23 @@
 		</div>
 		<script>
 			const dir = "./assets/images/products/";
+			const params = new URLSearchParams(window.location.search);
+			const check = params.has("id");
+			const productImage = document.getElementById("v-specific-image-product");
+			const titleHolder = document.querySelector("#v-product-main .v-title");
+			const goBacktoggle = document.querySelector("#v-product-main .go-back");
+
+			if (!check || !params.has("ext")) {
+				window.history.back();
+			} else {
+				const id = params.get("id");
+				const extension = params.get("ext");
+				productImage.src = `${dir}${id}.${extension}`;
+				titleHolder.innerHTML = `${id.split("-")[0]} ${id.split("-")[1]}`;
+			}
+			goBacktoggle.addEventListener("click", function () {
+				window.history.back();
+			});
 		</script>
 	</body>
 </html>

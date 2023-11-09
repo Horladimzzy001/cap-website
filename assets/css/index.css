@@ -277,6 +277,7 @@
 	justify-content: center;
 	border-radius: 1rem;
 	overflow: hidden;
+	border: 1px solid #0001;
 	max-height: 450px;
 }
 #v-product-main .v-product-image .img-fluid {
@@ -286,4 +287,12 @@
 #v-product-main .v-product-content .v-text {
 	font-size: 1.01rem;
 	font-weight: 450;
+}
+.v-wrapper .go-back {
+	gap: 8px;
+	background-color: #ddd9;
+	padding: 0.7rem 1.2rem;
+	border-radius: 1000px;
+	margin-left: 10px;
+	margin-block: 4rem;
 }
