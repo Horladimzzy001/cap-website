@@ -127,6 +127,7 @@
 	margin-top: 4rem;
 	gap: 1rem;
 	min-height: 350px;
+	padding-inline: 1.5rem;
 }
 .v-hero-section .v-grid-wrap .v-image-container {
 	height: 300px;
@@ -202,7 +203,7 @@
 	overflow: hidden;
 	background-color: transparent;
 	height: 100%;
-	border-radius: 5px;
+	border-radius: 8px;
 	border: 1px solid #ddd6;
 }
 .grid-container .v-each-product .img-fluid {
@@ -269,7 +270,10 @@
 	padding: 0.7rem 1.2rem;
 	border-radius: 1000px;
 	margin-left: 10px;
-	margin-block: 4rem;
+	margin-block: 3rem 2rem;
+}
+.v-contact-us-section {
+	margin-block: 2rem 5rem;
 }
 @media all and (min-width: 320px) {
 	#v-header .v-main-title .v-clr {
