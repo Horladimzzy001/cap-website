@@ -51,19 +51,21 @@ const productTitle = document.querySelector(".v-product-content .v-product-title
 const aboutProduct = document.querySelector(".v-product-content .v-text");
 const productSubtitle = document.querySelector(".v-product-content .v-subtitle");
 
-if (!check || !params.has("ext")) {
-	window.history.back();
-} else {
-	let id = params.get("id");
-	const extension = params.get("ext");
-	productImage.src = `${dir}${id}.${extension}`;
-	id = id.split("-")[1];
-	const currentProduct = productOpts.find((product) => {
-		return product.product_id == id;
-	});
-	productTitle.innerHTML = currentProduct.product_title;
-	aboutProduct.innerHTML = currentProduct.product_text;
-	productSubtitle.innerHTML = currentProduct.product_subtitle;
+if (window.location.pathname.includes("product.html")) {
+	if (!check || !params.has("ext")) {
+		window.history.back();
+	} else {
+		let id = params.get("id");
+		const extension = params.get("ext");
+		productImage.src = `${dir}${id}.${extension}`;
+		id = id.split("-")[1];
+		const currentProduct = productOpts.find((product) => {
+			return product.product_id == id;
+		});
+		productTitle.innerHTML = currentProduct.product_title;
+		aboutProduct.innerHTML = currentProduct.product_text;
+		productSubtitle.innerHTML = currentProduct.product_subtitle;
+	}
 }
 
 if (goBacktoggle) {

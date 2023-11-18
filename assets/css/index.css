@@ -275,6 +275,9 @@
 .v-contact-us-section {
 	margin-block: 2rem 5rem;
 }
+.v-contact-us-section .v-phone-num a {
+	color: var(--green-clr);
+}
 @media all and (min-width: 320px) {
 	#v-header .v-main-title .v-clr {
 		text-align: start;
