@@ -31,7 +31,10 @@ const productOpts = [
 		product_id: "4",
 		product_title: "Indulge in Opulence",
 		product_subtitle: "The Rich Senator Handcrafted Red Cap – A Symphony of Romantic Luxury and Classic Elegance",
-		product_text: `Step into the realm of authority and sophistication with our Black Chief Vibes Cap, meticulously crafted to stand out and impart the regal touch of a chief. This cap is more than an accessory; it's a symbol of prestige designed for those distinguished occasions that demand a statement of class and leadership. <br /> Draped in commanding black, this cap exudes an air of authority and timeless style. Tailored to perfection, it seamlessly blends tradition with contemporary aesthetics, making it the epitome of refined elegance for chief events.`,
+		product_text: `Immerse yourself in the epitome of romantic luxury with our Rich Senator Handcrafted Red Cap, a sartorial masterpiece that defines sophistication and fine class. Meticulously crafted for grand occasions, this cap embodies the distinguished senatorial vibe while adding a touch of opulence to your ensemble. <br />
+		The deep, rich red hue speaks volumes of passion and grandeur, making it the ideal choice for those who seek to make a statement at significant events. Handcrafted with precision and care, this cap is a testament to the artisanal mastery that goes into creating a piece of wearable art. <br />
+		Elevate your presence with the Rich Senator Handcrafted Red Cap, as it effortlessly blends the romantic allure of red with the timeless elegance befitting a senator. The intricate detailing and craftsmanship ensure that this cap is not merely an accessory but a symbol of refined taste and affluence.
+`,
 	},
 	{
 		product_id: "5",

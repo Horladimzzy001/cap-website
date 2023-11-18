@@ -263,6 +263,7 @@
 #v-product-main .v-product-content .v-text {
 	font-size: 1.01rem;
 	font-weight: 450;
+	word-spacing: 2px;
 }
 .v-wrapper .go-back {
 	gap: 8px;
