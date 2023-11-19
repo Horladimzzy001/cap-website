@@ -41,50 +41,44 @@
 				<!-- header @::end -->
 				<main id="v-product-main">
 					<div class="container-xl p-0">
-						<button class="d-flex align-items-center go-back">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-								<path
-									fill="currentColor"
-									d="M14.71 6.71a.996.996 0 0 0-1.41 0L8.71 11.3a.996.996 0 0 0 0 1.41l4.59 4.59a.996.996 0 1 0 1.41-1.41L10.83 12l3.88-3.88c.39-.39.38-1.03 0-1.41z" />
-							</svg>
-							<span>Back</span>
-						</button>
-						<div class="row col-12 m-0 mt-5 align-items-stretch">
+						<div class="row col-12 m-0 align-items-stretch justify-content-center mt-4">
 							<div class="col-md-6">
-								<div class="v-product-image">
-									<img src="" alt="" class="img-fluid" id="v-specific-image-product" />
-								</div>
-							</div>
-							<div class="col-md-6 mx-auto mt-4 mt-md-0">
-								<div class="v-product-content">
-									<div class="d-flex flex-column gap-3">
-										<h2 class="v-price-container">
-											<span class="v-price-tag">Price: </span> &nbsp;
-											<span class="v-price"> &#8358;35,000 </span>
-										</h2>
-										<h2 class="v-product-title text-capitalize"></h2>
-										<h4 class="v-subtitle text-capitalize"></h4>
-										<div>
-											<span class="v-text">
-												Introducing our traditional Yoruba Cap, a timeless emblem of cultural elegance. Handcrafted with meticulous care, this Yoruba
-												Cap embodies heritage and sophistication. Crafted from premium materials and adorned with intricate designs, it encapsulates
-												tradition while adding a touch of refined style. With an incredibly durable build, this cap ensures longevity and continued
-												elegance. Offering all this at a remarkably affordable price, it allows you to embrace cultural pride and sartorial
-												distinction without compromise.
-											</span>
+								<div class="d-flex flex-column row-gap-5">
+									<div class="v-acct-details">
+										<div class="v-image-container d-flex align-items-center justify-content-center bg-white rounded-3 py-5 user-select-none">
+											<img src="./assets/images/opay-logo.png" alt="" class="img-fluid" />
 										</div>
-										<div class="d-flex mt-2">
-											<a href="./payment.html" class="v-order">
-												<span>Place an order</span>
-												<div class="v-icon">
-													<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-														<path
-															fill="none"
-															stroke="currentColor"
-															d="M21 3L3 21M21 3c-.676.676-1.923 1.11-3.039 1.379c-1.49.359-3.036.424-4.559.252c-1.182-.134-2.484-.4-3.009-.924M21 3c-.676.676-1.11 1.923-1.379 3.039c-.359 1.49-.424 3.036-.252 4.559c.134 1.182.4 2.484.924 3.009" />
-													</svg>
-												</div>
-											</a>
+										<div class="d-flex flex-column row-gap-3 mt-4">
+											<h5 class="d-flex align-items-center justify-content-between">
+												<span class="v-key"> Account number </span>
+												<span class="d-flex align-items-center column-gap-2 v-value">
+													<span class="v-acct-num">7081313170</span>
+													<button type="button" class="v-copy">
+														<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+															<path
+																fill="currentColor"
+																d="M14 8H4c-1.103 0-2 .897-2 2v10c0 1.103.897 2 2 2h10c1.103 0 2-.897 2-2V10c0-1.103-.897-2-2-2z" />
+															<path fill="currentColor" d="M20 2H10a2 2 0 0 0-2 2v2h8a2 2 0 0 1 2 2v8h2a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z" />
+														</svg>
+													</button>
+												</span>
+											</h5>
+											<h5 class="d-flex align-items-center justify-content-between">
+												<span class="v-key"> Account name </span>
+												<span class="v-value"> Afis Aleje </span>
+											</h5>
+											<h5 class="d-flex align-items-center justify-content-between">
+												<span class="v-key"> Price </span>
+												<span class="v-value">&#8358;35,000</span>
+											</h5>
+										</div>
+										<div class="mt-5 pt-3 border-top">
+											<span class="v-293j2f2">If payment has been made successfully, click the link below to share receipt of payment.</span>
+											<div class="mt-4 d-flex flex-column row-gap-1">
+												<button type="button" class="v-send-receipt">
+													<span>I have made payment</span>
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>

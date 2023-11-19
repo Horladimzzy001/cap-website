@@ -11,6 +11,11 @@
 	margin-inline: auto;
 	max-width: 1024px;
 	flex-grow: 1;
+	min-height: 100vh;
+	min-height: 100dvh;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
 }
 #v-header {
 	padding-block: 1rem 0;
@@ -246,6 +251,7 @@
 }
 #v-product-main {
 	margin-block: 2rem 6rem;
+	flex-grow: 1;
 }
 #v-product-main .v-product-image {
 	display: flex;
@@ -279,6 +285,30 @@
 .v-contact-us-section .v-phone-num a {
 	color: var(--green-clr);
 }
+.v-acct-details .v-image-container {
+	border: 1px solid #1dcf9f;
+}
+.v-acct-details .v-key {
+	opacity: 0.6;
+}
+.v-copy {
+	color: var(--green-clr);
+}
+.v-copy svg {
+	--size: 1.4rem;
+	width: var(--size);
+	height: var(--size);
+	animation: animateIn 300ms ease-in-out;
+}
+@keyframes animateIn {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
 @media all and (min-width: 320px) {
 	#v-header .v-main-title .v-clr {
 		text-align: start;
@@ -288,6 +318,23 @@
 	.products-container .grid-container {
 		grid-template-columns: 1fr 1fr;
 	}
+}
+.v-293j2f2 {
+	font-weight: 500;
+	letter-spacing: 0.3px;
+}
+.v-send-receipt {
+	background-color: #25d366;
+	color: var(--white);
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding-block: 13px;
+	border-radius: 6px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
 }
 @media all and (min-width: 991px) {
 	#v-header .v-main-title .v-clr {
@@ -318,5 +365,13 @@
 	}
 	.v-hero-section .v-grid-wrap {
 		grid-template-columns: 1fr;
+	}
+}
+@media all and (max-width: 500px) {
+	.v-acct-details :is(.v-value, .v-key) {
+		font-size: 1rem;
+	}
+	.v-acct-details .v-value svg {
+		--size: 1rem;
 	}
 }
