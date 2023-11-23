@@ -129,7 +129,7 @@ if (textContainer) {
 }
 function sendMessage() {
 	const phoneNumber = "2348057704001";
-	const message = "Hello, I've just made a payment for my recent purchase/order. Could you kindly confirm receipt on your end? Thank you";
+	const message = "Hello, I've just made a payment for my recent purchase. Could you kindly confirm receipt on your end? Thank you";
 	const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
 
 	window.open(url, "_blank");
